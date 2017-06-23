@@ -1,0 +1,30 @@
+*,*:before,*:after{
+	box-sizing: border-box;
+	position: relative;
+}
+html, body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+img{
+	width: 150px;
+}
+nav{
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+nav ul li{
+	background: #fff;
+}
+
