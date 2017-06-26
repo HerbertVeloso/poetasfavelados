@@ -38,9 +38,9 @@ img{
 }
 #home nav ul li{
 	background: #fff;
-	border: solid 1px #000;
+	border: solid 1px #888;
 	border-radius:46px;
-	color: blue; 
+	color: #1f4ecc; 
 	font-size:0.94em;
 	font-style:normal;
 	text-align: center;
@@ -49,4 +49,42 @@ img{
 }
 #home img{
 	width: 29%;
+}
+main{
+	height: 100vh;
+	display: flex;
+}
+main #sobre{
+	padding: 2%;
+	margin-left: 10%;
+	width: 50%;
+}
+main #acoes{
+	background: url(assets/f6.jpg) no-repeat;
+	padding: 2%;
+	padding-top: 270px;
+	display: flex;
+	width: 55%;
+}
+main #acoes div{
+	width: 30%;
+	background: #fff;
+	margin: 5px;
+	padding: 15px;
+}
+main #acoes div h3{
+	font-size: 1.56em;
+	color: #1f4ecc;
+	font-style: normal;
+	text-align: left;
+	line-height: 1.34em;
+	letter-spacing: 0em; 	
+}
+main #acoes div p{
+	font-size: 1.00em;
+	color: #1f4ecc;
+	font-style: normal;
+	text-align: left;
+	line-height: 0.75em;
+	letter-spacing: 0em;
 }
