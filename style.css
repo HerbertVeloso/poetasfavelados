@@ -18,9 +18,19 @@ html, body{
 	width: 100%;
 	margin: 0;
 }
-
-img{
+img {
 	width: 150px;
+}
+.credfoto{
+	font-size: 1.25em;
+	color: #ffffff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300; /*Light*/
+	font-style:normal;
+	text-align: left;
+	line-height:1.07em;
+	letter-spacing: 0em;
+	text-shadow:1px -1px #000;
 }
 #home {
 	width: 100%;
@@ -58,23 +68,11 @@ img{
 	font-style:normal;
 	line-height: 0.8em;
 	text-align: center;
-	
-	
-
 }
 #home img{
 	width: 29%;
 }
-#home p{
-	font-size: 1.25em;
-	color: #ffffff;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300; /*Light*/
-	font-style:normal;
-	text-align: left;
-	line-height:1.07em;
-	letter-spacing: 0em;
-	text-shadow:1px -1px #000;
+#home .credfoto{
 	align-self: flex-end;
 	position: relative;
 	left:-730px;
@@ -110,20 +108,20 @@ main #sobre p{
 	font-style: normal;
 	text-align: left;
 	line-height: 1.07em;
-	letter-spacing: 0em;
-	padding: 
+	letter-spacing: 0em; 
 }
 main #acoes{
 	background: url(assets/f6.jpg) no-repeat;
 	padding: 2%;
 	padding-top: 270px;
 	display: flex;
+	flex-wrap: wrap;
 }
 main #acoes div{
-	width: 32%;
+	max-width: 30%;
 	background: #fff;
 	margin: 5px;
-	padding: 15px 20px;
+	padding: 0px 20px;
 }
 main #acoes div h3{
 	height:20%;
@@ -151,6 +149,15 @@ main #acoes div p{
 	text-align: left;
 	line-height: 1.0em;
 	letter-spacing: 0em;
+}
+main #acoes .credfoto{
+	width: 100%;
+	z-index: 2;
+	/*background: red;*/
+	/*align-self: flex-end;*/
+	text-align: right;
+	position: relative;
+	margin: 0;
 }
 #contato{
 	display:flex;
