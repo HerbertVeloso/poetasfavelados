@@ -45,6 +45,9 @@ img{
 	list-style: none;
 }
 #home nav ul li{
+	width:110px;
+	margin: 0 0.86%;
+	padding: 5px 0;
 	background: #fff;
 	border: solid 1px #888;
 	border-radius:46px;
@@ -53,9 +56,10 @@ img{
 	font-weight: 400; /*Regular*/
 	font-size:0.94em;
 	font-style:normal;
+	line-height: 0.8em;
 	text-align: center;
-	margin-left: 1.72%;
-	width:7%;
+	
+	
 
 }
 #home img{
@@ -77,17 +81,16 @@ img{
 }
 main{
 	height: 100vh;
+	width: 100%;
 	display: flex;
 }
 section{
-	width: 50%;
+	max-width: 50%;
 }
 main #sobre{
 	padding: 2%;
 	padding-left: 7%;
-	padding-right: 5%;
-	padding: 2%;
-	padding-left: 7%;
+	padding-right: 6%;
 }
 main #sobre h2{
 	font-size: 1.88em;
@@ -108,6 +111,7 @@ main #sobre p{
 	text-align: left;
 	line-height: 1.07em;
 	letter-spacing: 0em;
+	padding: 
 }
 main #acoes{
 	background: url(assets/f6.jpg) no-repeat;
