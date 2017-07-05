@@ -153,8 +153,6 @@ main #acoes div p{
 main #acoes .credfoto{
 	width: 100%;
 	z-index: 2;
-	/*background: red;*/
-	/*align-self: flex-end;*/
 	text-align: right;
 	position: relative;
 	margin: 0;
@@ -201,4 +199,11 @@ main #acoes .credfoto{
 	line-height: 1.07em;
 	letter-spacing: 0em;
 	margin: 0;
+}
+#contato .credfoto{
+	align-self: flex-end;
+	position: relative;
+	right: -10px;
+	bottom:-250px;
+
 }
