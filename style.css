@@ -17,9 +17,12 @@ html, body{
 	flex-direction: column;
 	width: 100%;
 	margin: 0;
+	overflow: auto;
 }
-img {
-	width: 150px;
+@media (max-width: 640px){
+	body{
+		overflow: hidden;
+	}
 }
 .credfoto{
 	font-size: 1.25em;
@@ -38,25 +41,45 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	margin: 0;
 	background: url(assets/f1.jpg) no-repeat;
 	background-size: 100%;
+}
+@media (max-width: 640px){
+    #home{
+    	background: #ffca22;
+    } 
 }
 #home nav{
 	z-index: 1;
 	position: fixed;
 	top: 0;
 	width: 100%;
+
+	background: #0f0;
 }
+
 #home nav ul{
 	display: flex;
 	flex-direction: row;
 	justify-content:center;
 	list-style: none;
+	padding: 0;
 }
-#home nav ul li{
+#home nav ul a{
+	text-decoration: none;
 	width:110px;
 	margin: 0 0.86%;
+}
+@media (max-width: 640px){
+	#home nav ul a{
+		width: 80px;
+		margin:0.69%;
+	}
+}
+#home nav ul a li{
+	width:100%;
 	padding: 5px 0;
 	background: #fff;
 	border: solid 1px #888;
@@ -67,10 +90,23 @@ img {
 	font-size:0.94em;
 	font-style:normal;
 	line-height: 0.8em;
+	letter-spacing: 0em;
 	text-align: center;
+}
+@media (max-width: 640px){
+	#home nav ul a li{
+		padding:  10px 0;
+		color: #00416d;
+	}
 }
 #home img{
 	width: 29%;
+}
+@media (max-width: 640px){
+	#home img{
+		width: 82%;
+		margin-top: 127px;
+	}
 }
 #home .credfoto{
 	align-self: flex-end;
@@ -205,5 +241,4 @@ main #acoes .credfoto{
 	position: relative;
 	right: -10px;
 	bottom:-250px;
-
 }
