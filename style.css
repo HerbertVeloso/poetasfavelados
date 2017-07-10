@@ -56,8 +56,6 @@ html, body{
 	position: fixed;
 	top: 0;
 	width: 100%;
-
-	background: #0f0;
 }
 
 #home nav ul{
@@ -114,17 +112,44 @@ html, body{
 	left:-730px;
 }
 main{
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
 }
+@media (max-width: 640px){
+	main {
+		flex-direction: column;
+	}
+}
 section{
 	max-width: 50%;
+}
+@media (max-width: 640px){
+	section{
+		max-width: 100%;
+	}
 }
 main #sobre{
 	padding: 2%;
 	padding-left: 7%;
 	padding-right: 6%;
+}
+@media (max-width: 640px){
+	main #sobre{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding-bottom: 60px;
+	}
+}
+main #sobre img{
+	width: 150px; 
+}
+@media (max-width: 640px){
+	main #sobre img{
+		display: none;
+	}
 }
 main #sobre h2{
 	font-size: 1.88em;
@@ -136,15 +161,45 @@ main #sobre h2{
 	line-height: 1.61;
 	letter-spacing: 0em;
 }
+@media (max-width: 640px){
+	#sobre h2{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.88em;
+		color: #1f4ecc;
+		font-style: normal;
+		text-align: left;
+		line-height: 1.61em;
+		letter-spacing: 0em;
+		margin: 0;
+		margin-top: 70px;
+		margin-left: 40px;
+		width: 80%;
+	}
+}
 main #sobre p{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:400;
-	font-size: 1.25em;
+	font-size: 1.10em;
 	color: #656565;
 	font-style: normal;
 	text-align: left;
 	line-height: 1.07em;
 	letter-spacing: 0em; 
+}
+
+@media (max-width: 640px){
+	#sobre p{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 0.88em;
+		color: #95989a;
+		font-style: normal;
+		text-align: left;
+		line-height: 0.75em;
+		letter-spacing: 0em;
+		/*padding: 22px;*/
+		width: 80%;
+		margin: 10px;
+	}
 }
 main #acoes{
 	background: url(assets/f6.jpg) no-repeat;
@@ -205,8 +260,9 @@ main #acoes .credfoto{
 	padding-left: 7%;
 }
 #contato img{
+	width: 150px;
 	align-self: flex-start;
-	margin:
+	
 }
 #contato div{
 	display:flex;
