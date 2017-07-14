@@ -19,10 +19,10 @@ html, body{
 	margin: 0;
 	overflow: auto;
 }
-@media (max-width: 640px){
-	body{
-		overflow: hidden;
-	}
+									@media (max-width: 640px){
+										body{
+											overflow: hidden;
+										}
 }
 .credfoto{
 	font-size: 1.25em;
@@ -46,10 +46,10 @@ html, body{
 	background: url(assets/f1.jpg) no-repeat;
 	background-size: 100%;
 }
-@media (max-width: 640px){
-    #home{
-    	background: #ffca22;
-    } 
+								@media (max-width: 640px){
+								    #home{
+								    	background: #ffca22;
+								    } 
 }
 #home nav{
 	z-index: 1;
@@ -70,11 +70,11 @@ html, body{
 	width:110px;
 	margin: 0 0.86%;
 }
-@media (max-width: 640px){
-	#home nav ul a{
-		width: 80px;
-		margin:0.69%;
-	}
+										@media (max-width: 640px){
+											#home nav ul a{
+												width: 80px;
+												margin:0.69%;
+											}
 }
 #home nav ul a li{
 	width:100%;
@@ -91,20 +91,20 @@ html, body{
 	letter-spacing: 0em;
 	text-align: center;
 }
-@media (max-width: 640px){
-	#home nav ul a li{
-		padding:  10px 0;
-		color: #00416d;
-	}
+									@media (max-width: 640px){
+										#home nav ul a li{
+											padding:  10px 0;
+											color: #00416d;
+										}
 }
 #home img{
 	width: 29%;
 }
-@media (max-width: 640px){
-	#home img{
-		width: 82%;
-		margin-top: 127px;
-	}
+									@media (max-width: 640px){
+										#home img{
+											width: 82%;
+											margin-top: 127px;
+										}
 }
 #home .credfoto{
 	align-self: flex-end;
@@ -116,40 +116,40 @@ main{
 	width: 100%;
 	display: flex;
 }
-@media (max-width: 640px){
-	main {
-		flex-direction: column;
-	}
+								@media (max-width: 640px){
+									main {
+										flex-direction: column;
+									}
 }
 section{
 	max-width: 50%;
 }
-@media (max-width: 640px){
-	section{
-		max-width: 100%;
-	}
+								@media (max-width: 640px){
+									section{
+										max-width: 100%;
+									}
 }
 main #sobre{
 	padding: 2%;
 	padding-left: 7%;
 	padding-right: 6%;
 }
-@media (max-width: 640px){
-	main #sobre{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		padding-bottom: 60px;
-	}
+							@media (max-width: 640px){
+								main #sobre{
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									flex-direction: column;
+									padding-bottom: 60px;
+								}
 }
 main #sobre img{
 	width: 150px; 
 }
-@media (max-width: 640px){
-	main #sobre img{
-		display: none;
-	}
+							@media (max-width: 640px){
+								main #sobre img{
+									display: none;
+								}
 }
 main #sobre h2{
 	font-size: 1.88em;
@@ -161,20 +161,20 @@ main #sobre h2{
 	line-height: 1.61;
 	letter-spacing: 0em;
 }
-@media (max-width: 640px){
-	#sobre h2{
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 1.88em;
-		color: #1f4ecc;
-		font-style: normal;
-		text-align: left;
-		line-height: 1.61em;
-		letter-spacing: 0em;
-		margin: 0;
-		margin-top: 70px;
-		margin-left: 40px;
-		width: 80%;
-	}
+						@media (max-width: 640px){
+							#sobre h2{
+								font-family: 'Source Sans Pro', sans-serif;
+								font-size: 1.88em;
+								color: #1f4ecc;
+								font-style: normal;
+								text-align: left;
+								line-height: 1.61em;
+								letter-spacing: 0em;
+								margin: 0;
+								margin-top: 70px;
+								margin-left: 40px;
+								width: 80%;
+							}
 }
 main #sobre p{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -187,19 +187,19 @@ main #sobre p{
 	letter-spacing: 0em; 
 }
 
-@media (max-width: 640px){
-	#sobre p{
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 0.88em;
-		color: #95989a;
-		font-style: normal;
-		text-align: left;
-		line-height: 0.75em;
-		letter-spacing: 0em;
-		/*padding: 22px;*/
-		width: 80%;
-		margin: 10px;
-	}
+							@media (max-width: 640px){
+								#sobre p{
+									font-family: 'Source Sans Pro', sans-serif;
+									font-size: 0.88em;
+									color: #95989a;
+									font-style: normal;
+									text-align: left;
+									line-height: 0.75em;
+									letter-spacing: 0em;
+									/*padding: 22px;*/
+									width: 80%;
+									margin: 10px;
+													}
 }
 main #acoes{
 	background: url(assets/f6.jpg) no-repeat;
@@ -209,13 +209,13 @@ main #acoes{
 	display: flex;
 	flex-flow: row wrap;
 }
-@media (max-width: 640px){
-	main #acoes{
-		flex-direction: column;
-		align-items: center;
-		padding-top: 60px;
-		background-position: -135px;
-	}
+							@media (max-width: 640px){
+								main #acoes{
+									flex-direction: column;
+									align-items: center;
+									padding-top: 60px;
+									background-position: -135px;
+								}
 }
 main #acoes h2{
 	display: none;
@@ -228,13 +228,13 @@ main #acoes h2{
 	line-height: 1.61em;
 	letter-spacing: 0em;
 }
-@media (max-width: 640px){
-	main #acoes h2{
-		display: block;
-		padding:0;
-		margin-bottom: 10px;
-		text-align: center;
-	}
+								@media (max-width: 640px){
+									main #acoes h2{
+										display: block;
+										padding:0;
+										margin-bottom: 10px;
+										text-align: center;
+									}
 }
 main #acoes div{
 	max-width: 30%;
@@ -242,15 +242,15 @@ main #acoes div{
 	margin: 5px;
 	padding: 0px 20px;
 }
-@media (max-width: 640px){
-	main #acoes div{
-		justify-content: center;
-		position: relative;
-		margin: 5px 0;
-		/*padding: 0;*/
-		max-width: 90%;
+								@media (max-width: 640px){
+									main #acoes div{
+										justify-content: center;
+										position: relative;
+										margin: 5px 0;
+										/*padding: 0;*/
+										max-width: 90%;
 
-	}
+									}
 main #acoes div h3{
 	height:20%;
 	padding: 1px;
@@ -268,17 +268,17 @@ main #acoes div h3{
 main #acoes div:last-child h3{
 	font-size: 1.4em;
 } 
-@media (max-width: 640px){
-	#acoes div h3{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.56em;
-	color: #1f4ecc
-	font-style:normal;
-	text-align: left;
-	line-height: 1.34em;
-	letter-spacing: 0em;
-	}	
-}
+							@media (max-width: 640px){
+								#acoes div h3{
+								font-family: 'Source Sans Pro', sans-serif;
+								font-size: 1.56em;
+								color: #1f4ecc
+								font-style:normal;
+								text-align: left;
+								line-height: 1.34em;
+								letter-spacing: 0em;
+								}	
+							}
 main #acoes div p{
 	font-size: 1.00em;
 	color: #1f4ecc;
@@ -346,3 +346,21 @@ main #acoes .credfoto{
 	right: -10px;
 	bottom:-250px;
 }
+
+								@media (max-width: 640px){
+									#contato{
+										background-size: 200%;
+										height: 65vh;
+									}
+									#contato img{
+										display: none;
+									}
+									#contato h2{
+										font-size: 40px;
+										left: 30%;
+									}
+									#contato p{
+										font-size: 20px;
+										left: 30%;
+									}
+								}
