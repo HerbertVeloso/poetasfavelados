@@ -17,23 +17,25 @@ html, body{
 	flex-direction: column;
 	width: 100%;
 	margin: 0;
-	overflow: auto;
+	/*overflow: auto;*/
 }
-									@media (max-width: 640px){
-										body{
-											overflow: hidden;
-										}
+@media (max-width: 650px){
+	body{
+		/*overflow: hidden;*/
+	}
 }
 .credfoto{
-	font-size: 1.25em;
+	font-size: 1.7em;
 	color: #ffffff;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300; /*Light*/
+	font-weight: 400; 
 	font-style:normal;
 	text-align: left;
 	line-height:1.07em;
 	letter-spacing: 0em;
 	text-shadow:1px -1px #000;
+
+	align-self: flex-end;
 }
 #home {
 	width: 100%;
@@ -41,15 +43,16 @@ html, body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	align-content: center;
 	flex-wrap: wrap;
 	margin: 0;
-	background: url(assets/f1.jpg) no-repeat;
-	background-size: 100%;
+	background: url(assets/f1.jpg) no-repeat 40% top;
+	background-size: cover;
 }
-								@media (max-width: 640px){
-								    #home{
-								    	background: #ffca22;
-								    } 
+@media (max-width: 650px){
+    #home{
+    	background: #ffca22;
+    } 
 }
 #home nav{
 	z-index: 1;
@@ -70,11 +73,11 @@ html, body{
 	width:110px;
 	margin: 0 0.86%;
 }
-										@media (max-width: 640px){
-											#home nav ul a{
-												width: 80px;
-												margin:0.69%;
-											}
+@media (max-width: 650px){
+	#home nav ul a{
+		width: 80px;
+		margin:0.69%;
+	}
 }
 #home nav ul a li{
 	width:100%;
@@ -91,65 +94,81 @@ html, body{
 	letter-spacing: 0em;
 	text-align: center;
 }
-									@media (max-width: 640px){
-										#home nav ul a li{
-											padding:  10px 0;
-											color: #00416d;
-										}
+@media (max-width: 650px){
+	#home nav ul a li{
+		padding:  10px 0;
+		color: #00416d;
+	}
 }
 #home img{
-	width: 29%;
+	width: 33%;
 }
-									@media (max-width: 640px){
-										#home img{
-											width: 82%;
-											margin-top: 127px;
-										}
+@media (max-width: 650px){
+	#home img{
+		width: 82%;
+		margin-top: 127px;
+	}
 }
 #home .credfoto{
 	align-self: flex-end;
-	position: relative;
-	left:-730px;
+	left:-60%;
+
+}
+@media(max-width: 2000px){
+	#home .credfoto{
+		left:-55%;
+	}
+}
+@media(max-width: 1000px){
+	#home .credfoto{
+		left:-45%;
+	}
+}
+@media(max-width: 650px){
+	#home .credfoto{
+		display: none;
+	}
 }
 main{
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
 }
-								@media (max-width: 640px){
-									main {
-										flex-direction: column;
-									}
+@media (max-width: 650px){
+	main {
+		flex-direction: column;
+	}
 }
 section{
 	max-width: 50%;
 }
-								@media (max-width: 640px){
-									section{
-										max-width: 100%;
-									}
+@media (max-width: 650px){
+	section{
+		max-width: 100%;
+	}
 }
 main #sobre{
 	padding: 2%;
 	padding-left: 7%;
 	padding-right: 6%;
 }
-							@media (max-width: 640px){
-								main #sobre{
-									display: flex;
-									justify-content: center;
-									align-items: center;
-									flex-direction: column;
-									padding-bottom: 60px;
-								}
+@media (max-width: 650px){
+	main #sobre{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding-bottom: 60px;
+	}
 }
 main #sobre img{
-	width: 150px; 
+	width: 40%; 
+	padding-bottom:3%;
 }
-							@media (max-width: 640px){
-								main #sobre img{
-									display: none;
-								}
+@media (max-width: 650px){
+	main #sobre img{
+		display: none;
+	}
 }
 main #sobre h2{
 	font-size: 1.88em;
@@ -161,21 +180,21 @@ main #sobre h2{
 	line-height: 1.61;
 	letter-spacing: 0em;
 }
-						@media (max-width: 640px){
-							#sobre h2{
-								font-family: 'Source Sans Pro', sans-serif;
-								font-size: 1.88em;
-								color: #1f4ecc;
-								font-style: normal;
-								text-align: left;
-								line-height: 1.61em;
-								letter-spacing: 0em;
-								margin: 0;
-								margin-top: 70px;
-								margin-left: 40px;
-								width: 80%;
-							}
-						}
+@media (max-width: 650px){
+	#sobre h2{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.88em;
+		color: #1f4ecc;
+		font-style: normal;
+		text-align: left;
+		line-height: 1.61em;
+		letter-spacing: 0em;
+		margin: 0;
+		margin-top: 70px;
+		margin-left: 40px;
+		width: 80%;
+	}
+}
 main #sobre p{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:400;
@@ -187,36 +206,43 @@ main #sobre p{
 	letter-spacing: 0em; 
 }
 
-						@media (max-width: 640px){
-							#sobre p{
-								font-family: 'Source Sans Pro', sans-serif;
-								font-size: 0.88em;
-								color: #95989a;
-								font-style: normal;
-								text-align: left;
-								line-height: 0.75em;
-								letter-spacing: 0em;
-								/*padding: 22px;*/
-								width: 80%;
-								margin: 10px;
-												}
+@media (max-width: 650px){
+	#sobre p{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 0.88em;
+		color: #95989a;
+		font-style: normal;
+		text-align: left;
+		line-height: 0.75em;
+		letter-spacing: 0em;
+		/*padding: 22px;*/
+		width: 80%;
+		margin: 10px;
 						}
+}
+
 main #acoes{
+	width: 100%;
 	background: url(assets/f6.jpg) no-repeat;
 	background-size: cover;
 	padding: 2%;
-	padding-top: 270px;
+	padding-top: 18%;
 	display: flex;
 	flex-flow: row wrap;
 }
-						@media (max-width: 640px){
-							main #acoes{
-								flex-direction: column;
-								align-items: center;
-								padding-top: 60px;
-								background-position: -135px;
-							}
-						}
+@media (max-width: 1800px){
+	main #acoes{
+		padding-top: 23%;
+	}
+}
+@media (max-width: 1350px){
+	main #acoes{
+		flex-direction: column;
+		align-items: center;
+		padding-top: 10%s;
+		background-position: -135px;
+	}
+}
 main #acoes h2{
 	display: none;
 	width: 100%;
@@ -228,29 +254,31 @@ main #acoes h2{
 	line-height: 1.61em;
 	letter-spacing: 0em;
 }
-						@media (max-width: 640px){
-							main #acoes h2{
-								display: block;
-								padding:0;
-								margin-bottom: 10px;
-								text-align: center;
-							}
-						}
+@media (max-width: 650px){
+	main #acoes h2{
+		display: block;
+		padding:0;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+}
 main #acoes div{
-	max-width: 30%;
+	width: 30%;
+	max-width: 200px;
 	background: #fff;
 	margin: 5px;
 	padding: 0px 20px;
 }
-						@media (max-width: 640px){
-							main #acoes div{
-								justify-content: center;
-								position: relative;
-								margin: 5px 0;
-								/*padding: 0;*/
-								max-width: 90%;
-							}
-						}
+@media (max-width: 1350px){
+	main #acoes div{
+		justify-content: center;
+		position: relative;
+		margin: 5px 0;
+		/*padding: 0;*/
+		max-width: 90%;
+		min-width: 90%;
+	}
+}
 main #acoes div h3{
 	height:20%;
 	padding: 1px;
@@ -268,11 +296,11 @@ main #acoes div h3{
 main #acoes .last-div-acoes h3{
 	font-size: 1.4em;
 } 
-						@media (max-width: 640px){
-							#acoes div h3{
-							
-							}	
-						}
+@media (max-width: 650px){
+	#acoes div h3{
+	
+	}	
+}
 main #acoes div p{
 	font-size: 1.00em;
 	color: #1f4ecc;
@@ -287,28 +315,28 @@ main #acoes .credfoto{
 	width: 100%;
 	z-index: 2;
 	text-align: right;
-	position: relative;
+	bottom: -15%;
 	margin: 0;
 }
 #contato{
 	display:flex;
 	align-items: center;
 	flex-direction: column;
-	background: url(assets/f5.jpg) no-repeat;
+	background: url(assets/f5.jpg) no-repeat top center;
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
 	padding: 2%;
 	padding-left: 7%;
 }
-			@media (max-width: 640px){
-				#contato{
-					align-items: center;
-					background-position: center;
-				}
-			}
+@media (max-width: 650px){
+	#contato{
+		align-items: center;
+		background-position: center;
+	}
+}
 #contato img{
-	width: 150px;
+	width: 16%;
 	align-self: flex-start;
 	
 }
@@ -324,12 +352,12 @@ main #acoes .credfoto{
 	background: rgba(0,0,0,0.5);
 	width: 350px;
 }
-			@media (max-width:640px){
-				#contato div{
-					width: 85%;
-					align-self: center;
-				}
-			}
+@media (max-width:650px){
+	#contato div{
+		width: 85%;
+		align-self: center;
+	}
+}
 #contato h2{
 	font-size:20px;
 	color: #fff;
@@ -348,35 +376,52 @@ main #acoes .credfoto{
 }
 
 #contato .credfoto{
-	align-self: flex-end;
-	position: relative;
-	right: -10px;
-	bottom:-250px;
-}
+	font-size: 1.7em;
 
-						@media (max-width: 640px){
-							#contato{
-								/*background-size: cover;*/
-								/*height: 100vh;*/
-							}
-							#contato img{
-								display: none;
-							}
-							#contato h2{
-								font-size:1.88em;
-								margin-bottom: 10px;
-								/*left: 30%;*/
-							}
-							#contato p{
-								font-size: 0.88em;
-								/*left: 30%;*/
-							}
-							#contato .num-cel{
-								font-size: 1.25em;
-								margin-top: 20px;
-							}
-							#contato .credfoto{
-								right: 5%;
-								bottom:-50%;								
-							}
-						}
+	align-self: flex-end;
+	/*position: relative;*/
+	right: -10px;
+	bottom:-25%;
+}
+@media(max-width: 2200px){
+	#contato .credfoto{
+		bottom:-35%;
+	}
+}
+@media(max-width: 1500px){
+	#contato .credfoto{
+		bottom:-45%;
+	}
+}
+@media(max-width: 650px){
+	#contato .credfoto{
+		left:-30%;
+		bottom:-100%;
+	}
+}
+@media (max-width: 650px){
+	#contato{
+		/*background-size: cover;*/
+		/*height: 100vh;*/
+	}
+	#contato img{
+		display: none;
+	}
+	#contato h2{
+		font-size:1.88em;
+		margin-bottom: 10px;
+		/*left: 30%;*/
+	}
+	#contato p{
+		font-size: 0.88em;
+		/*left: 30%;*/
+	}
+	#contato .num-cel{
+		font-size: 1.25em;
+		margin-top: 20px;
+	}
+	#contato .credfoto{
+		right: 5%;
+		bottom:-50%;								
+	}
+}
