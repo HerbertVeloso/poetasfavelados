@@ -17,14 +17,9 @@ html, body{
 	flex-direction: column;
 	width: 100%;
 	margin: 0;
-	/*overflow: auto;*/
-}
-@media (max-width: 650px){
-	body{
-		/*overflow: hidden;*/
-	}
 }
 .credfoto{
+	margin:0;
 	font-size: 1.7em;
 	color: #ffffff;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -34,8 +29,6 @@ html, body{
 	line-height:1.07em;
 	letter-spacing: 0em;
 	text-shadow:1px -1px #000;
-
-	align-self: flex-end;
 }
 #home {
 	width: 100%;
@@ -81,7 +74,7 @@ html, body{
 }
 #home nav ul a li{
 	width:100%;
-	padding: 5px 0;
+	padding: 10px 0;
 	background: #fff;
 	border: solid 1px #888;
 	border-radius:46px;
@@ -110,11 +103,13 @@ html, body{
 	}
 }
 #home .credfoto{
-	align-self: flex-end;
-	left:-60%;
+	position: absolute;
+	z-index: 1;
+	left:30px;
+	bottom: 10px;
 
 }
-@media(max-width: 2000px){
+/*@media(max-width: 2000px){
 	#home .credfoto{
 		left:-55%;
 	}
@@ -123,7 +118,7 @@ html, body{
 	#home .credfoto{
 		left:-45%;
 	}
-}
+}*/
 @media(max-width: 650px){
 	#home .credfoto{
 		display: none;
@@ -215,10 +210,9 @@ main #sobre p{
 		text-align: left;
 		line-height: 0.75em;
 		letter-spacing: 0em;
-		/*padding: 22px;*/
 		width: 80%;
 		margin: 10px;
-						}
+	}
 }
 
 main #acoes{
@@ -265,8 +259,10 @@ main #acoes h2{
 main #acoes div{
 	width: 30%;
 	max-width: 200px;
+	min-height: 30vh; 
 	background: #fff;
 	margin: 5px;
+	margin-bottom: 5%;
 	padding: 0px 20px;
 }
 @media (max-width: 1350px){
@@ -275,8 +271,11 @@ main #acoes div{
 		position: relative;
 		margin: 5px 0;
 		/*padding: 0;*/
-		max-width: 90%;
+		max-width: 80%;
 		min-width: 90%;
+	}
+	main #acoes .last-div-acoes{
+		margin-bottom: 5%;
 	}
 }
 main #acoes div h3{
@@ -296,11 +295,7 @@ main #acoes div h3{
 main #acoes .last-div-acoes h3{
 	font-size: 1.4em;
 } 
-@media (max-width: 650px){
-	#acoes div h3{
-	
-	}	
-}
+
 main #acoes div p{
 	font-size: 1.00em;
 	color: #1f4ecc;
@@ -313,10 +308,12 @@ main #acoes div p{
 }
 main #acoes .credfoto{
 	width: 100%;
+	margin:0;
 	z-index: 2;
 	text-align: right;
-	bottom: -15%;
-	margin: 0;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
 }
 #contato{
 	display:flex;
@@ -377,33 +374,11 @@ main #acoes .credfoto{
 
 #contato .credfoto{
 	font-size: 1.7em;
-
-	align-self: flex-end;
-	/*position: relative;*/
-	right: -10px;
-	bottom:-25%;
-}
-@media(max-width: 2200px){
-	#contato .credfoto{
-		bottom:-35%;
-	}
-}
-@media(max-width: 1500px){
-	#contato .credfoto{
-		bottom:-45%;
-	}
-}
-@media(max-width: 650px){
-	#contato .credfoto{
-		left:-30%;
-		bottom:-100%;
-	}
+	position: absolute;
+	right: 10px;
+	bottom:50px;
 }
 @media (max-width: 650px){
-	#contato{
-		/*background-size: cover;*/
-		/*height: 100vh;*/
-	}
 	#contato img{
 		display: none;
 	}
@@ -420,8 +395,39 @@ main #acoes .credfoto{
 		font-size: 1.25em;
 		margin-top: 20px;
 	}
-	#contato .credfoto{
+	/*#contato .credfoto{
 		right: 5%;
 		bottom:-50%;								
-	}
+	}*/
+}
+
+/*footer Vai na Web */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,700');
+.vnw{ 
+	width: 100%;
+	max-width: 100%;
+    height: 40px;
+	background: #f16337;
+	position: absolute;
+	left: 0;
+	bottom:0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.vnw__text{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 500;
+	font-size: 16px;
+    color: #30368c;
+}
+.vnw__link{
+	font-weight: 700;
+    color: #30368c;
+}
+@media (max-width: 768px){
+	.vnw__text{
+        font-size: 12px;
+    }
 }
